@@ -1,39 +1,44 @@
-EQUABOLIX STATIC WEBSITE
-========================
+EQUABOLIX STATIC SITE V2
+=========================
 
-Fokus:
-- Retatrutide 10 mg sebagai hero product
-- Bundle bonus: BAC Water x1 + syringe x4 + alcohol swab x4
-- Conversion utama: WhatsApp
-- Visual mempertahankan struktur website sebelumnya, lalu dipindahkan ke DNA Equabolix: clean, bright, teal, coral, straightforward.
+PERUBAHAN DARI VERSI SEBELUMNYA
+- Hero visual diperbaiki agar tidak terpotong di desktop.
+- Section "Product Visuals Packaging yang konsisten, bukan template acak" dihapus.
+- Fokus halaman dipindahkan ke:
+  1. Retatrutide 10 mg
+  2. Bonus BAC Water
+  3. Bonus 4 syringe
+  4. Bonus 4 alcohol swab
+  5. Lifestyle / balanced life visual
+  6. Testimonials
+- Layout dibangun ulang dari awal.
 
 FILE UTAMA
 - index.html
 - styles.css
 - script.js
-- robots.txt
 - assets/
 
-WAJIB DIGANTI SEBELUM LIVE
-Buka script.js:
-1. whatsappNumber: "6281234567890"
-2. displayPrice: "Rp1.690.000"
+ASSET YANG DIPAKAI
+- assets/equabolix-logo.png
+- assets/retatrutide-packaging.png
+- assets/bac-water-packaging.png
+- assets/lifestyle-active.svg
+- assets/lifestyle-nutrition.svg
+- assets/lifestyle-balance.svg
 
-Nomor WhatsApp menggunakan format internasional tanpa tanda +.
-Contoh: 6281234567890
+YANG WAJIB DIGANTI SEBELUM PUBLIKASI
+Buka script.js, lalu ganti:
+- whatsappNumber
+- displayPrice
 
-CRO YANG SUDAH DITANAM
-- Price visible above the fold
-- Bundle visible above the fold
-- CTA WhatsApp berulang di titik decision utama
-- Sticky mobile buy bar
-- WhatsApp message pre-filled
-- UTM attribution ikut terbawa ke pesan WhatsApp
-- dataLayer event: whatsapp_click
-- FAQ menangani objection sebelum chat
-- No form checkout untuk traffic product-aware
-- No fake countdown / fake scarcity
+CONTOH:
+const EQUABOLIX_CONFIG = {
+  whatsappNumber: "6281234567890",
+  displayPrice: "Rp1.690.000"
+};
 
-CONTENT GUARDRAIL
-Packaging sumber menuliskan Research Use Only / Not For Human Use.
-Website mengikuti wording itu dan tidak menyediakan dosing protocol atau instruksi injeksi.
+CATATAN
+- Website tidak memberi dosis, instruksi injeksi, atau protokol penggunaan.
+- Testimoni ditulis untuk menekankan value, clarity, dan experience, bukan klaim hasil berlebihan.
+- UTM dibawa ke WhatsApp untuk memudahkan tracking sumber lead.
