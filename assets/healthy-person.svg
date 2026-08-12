@@ -1,0 +1,20 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="720" height="720" rx="56" fill="#F6FAFA"/>
+<circle cx="170" cy="160" r="62" fill="#DFF4F3"/>
+<circle cx="553" cy="164" r="48" fill="#FFE6E0"/>
+<circle cx="360" cy="178" r="64" fill="#0B4E5A"/>
+<path d="M360 250C417 250 462 294 462 350V548H258V350C258 294 303 250 360 250Z" fill="#40A8AB"/>
+<path d="M292 317C323 346 396 346 428 317" stroke="#083A43" stroke-width="18" stroke-linecap="round"/>
+<path d="M257 549H463" stroke="#0B4E5A" stroke-width="20" stroke-linecap="round"/>
+<path d="M318 548L280 656" stroke="#0B4E5A" stroke-width="20" stroke-linecap="round"/>
+<path d="M402 548L440 656" stroke="#0B4E5A" stroke-width="20" stroke-linecap="round"/>
+<path d="M294 383L224 472" stroke="#FF6F61" stroke-width="22" stroke-linecap="round"/>
+<path d="M425 383L496 472" stroke="#0B4E5A" stroke-width="22" stroke-linecap="round"/>
+<path d="M211 472L151 430" stroke="#FF6F61" stroke-width="18" stroke-linecap="round"/>
+<path d="M503 472L566 425" stroke="#0B4E5A" stroke-width="18" stroke-linecap="round"/>
+<path d="M298 92C331 73 392 73 424 92" stroke="#40A8AB" stroke-width="10" stroke-linecap="round"/>
+<path d="M124 562C180 504 254 476 336 482" stroke="#D5E8E8" stroke-width="12" stroke-linecap="round"/>
+<path d="M384 482C456 487 527 469 589 417" stroke="#D5E8E8" stroke-width="12" stroke-linecap="round"/>
+<rect x="116" y="574" width="136" height="42" rx="21" fill="#FFFFFF"/>
+<text x="184" y="601" text-anchor="middle" fill="#0B4E5A" font-family="Arial, sans-serif" font-size="22" font-weight="700">balanced life</text>
+</svg>

@@ -1,44 +1,47 @@
-EQUABOLIX STATIC SITE V2
-=========================
+EQUABOLIX STATIC WEBSITE
+========================
 
-PERUBAHAN DARI VERSI SEBELUMNYA
-- Hero visual diperbaiki agar tidak terpotong di desktop.
-- Section "Product Visuals Packaging yang konsisten, bukan template acak" dihapus.
-- Fokus halaman dipindahkan ke:
-  1. Retatrutide 10 mg
-  2. Bonus BAC Water
-  3. Bonus 4 syringe
-  4. Bonus 4 alcohol swab
-  5. Lifestyle / balanced life visual
-  6. Testimonials
-- Layout dibangun ulang dari awal.
+Fokus:
+- Retatrutide 10 mg sebagai hero product
+- Bundle bonus: BAC Water x1 + syringe x4 + alcohol swab x4
+- Conversion utama: WhatsApp
+- Visual mempertahankan struktur website sebelumnya, lalu dipindahkan ke DNA Equabolix: clean, bright, teal, coral, straightforward.
 
 FILE UTAMA
 - index.html
 - styles.css
 - script.js
+- robots.txt
 - assets/
 
-ASSET YANG DIPAKAI
-- assets/equabolix-logo.png
-- assets/retatrutide-packaging.png
-- assets/bac-water-packaging.png
-- assets/lifestyle-active.svg
-- assets/lifestyle-nutrition.svg
-- assets/lifestyle-balance.svg
+WAJIB DIGANTI SEBELUM LIVE
+Buka script.js:
+1. whatsappNumber: "6281234567890"
+2. displayPrice: "Rp1.690.000"
 
-YANG WAJIB DIGANTI SEBELUM PUBLIKASI
-Buka script.js, lalu ganti:
-- whatsappNumber
-- displayPrice
+Nomor WhatsApp menggunakan format internasional tanpa tanda +.
+Contoh: 6281234567890
 
-CONTOH:
-const EQUABOLIX_CONFIG = {
-  whatsappNumber: "6281234567890",
-  displayPrice: "Rp1.690.000"
-};
+CRO YANG SUDAH DITANAM
+- Price visible above the fold
+- Bundle visible above the fold
+- CTA WhatsApp berulang di titik decision utama
+- Sticky mobile buy bar
+- WhatsApp message pre-filled
+- UTM attribution ikut terbawa ke pesan WhatsApp
+- dataLayer event: whatsapp_click
+- FAQ menangani objection sebelum chat
+- No form checkout untuk traffic product-aware
+- No fake countdown / fake scarcity
 
-CATATAN
-- Website tidak memberi dosis, instruksi injeksi, atau protokol penggunaan.
-- Testimoni ditulis untuk menekankan value, clarity, dan experience, bukan klaim hasil berlebihan.
-- UTM dibawa ke WhatsApp untuk memudahkan tracking sumber lead.
+CONTENT GUARDRAIL
+Packaging sumber menuliskan Research Use Only / Not For Human Use.
+Website mengikuti wording itu dan tidak menyediakan dosing protocol atau instruksi injeksi.
+
+
+VERSI V3
+- Tetap mengikuti CSS versi sebelumnya sebagai baseline.
+- Hero visual diperbaiki dengan single bottle PNG untuk Retatrutide.
+- Ditambahkan single bottle PNG kecil untuk BAC Water sebagai bonus.
+- Ditambahkan visual orang sehat / balanced life.
+- Ditambahkan section visual orang tanpa mengubah bahasa desain utama.
