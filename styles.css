@@ -248,6 +248,11 @@ footer{background:#022B30;color:white;padding:56px 0 86px}.footer__grid{display:
 .progress-points span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:white;font-size:11px;font-weight:800}
 .people-copy .people-note{margin:0;font-size:11px;line-height:1.6;color:#7B8989}
 
+.step{position:relative;min-height:260px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end}
+.step__top{position:absolute;inset:28px 28px auto;display:flex;align-items:flex-start;justify-content:space-between;margin:0;pointer-events:none}
+.step__number{display:grid;place-items:center;flex:0 0 auto;width:38px;height:38px;border-radius:50%;background:var(--ink);color:white;font-weight:800;font-size:16px;box-shadow:0 7px 18px rgba(0,59,66,.13)}
+.step__icon{display:grid!important;place-items:center;width:72px;height:72px;padding:0;border:0;background:transparent;color:var(--ink);font-size:54px;line-height:1;filter:drop-shadow(0 6px 12px rgba(0,59,66,.08))}
+
 .reveal{opacity:1;transform:none}
 .js .reveal{opacity:0;transform:translateY(18px)}
 .js .reveal.is-visible{opacity:1;transform:none}
@@ -292,4 +297,8 @@ footer{background:#022B30;color:white;padding:56px 0 86px}.footer__grid{display:
   .people-stage{border-radius:24px}
   .people-stage img{height:360px}
   .people-stage--runner{transform:translateY(-12px)}
+  .step{min-height:230px;padding:24px}
+  .step__top{inset:23px 23px auto}
+  .step__number{width:34px;height:34px;font-size:14px}
+  .step__icon{width:60px;height:60px;font-size:45px}
 }

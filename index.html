@@ -14,7 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4.0" />
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css?v=7.3.1" />
+  <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css?v=7.3.1" />
+  <link rel="stylesheet" href="styles.css?v=4.5" />
 </head>
 <body>
   <div class="announcement">
@@ -229,14 +231,23 @@
       </div>
     </section>
 
-    <section class="section order-section">
+    <section class="section order-section" id="order">
       <div class="container">
         <div class="order-panel">
           <div class="order-panel__head"><div><span class="kicker">SIMPLE ORDER FLOW</span><h2>Dari informasi ke konfirmasi, tanpa langkah yang tidak perlu.</h2></div><p>WhatsApp menjaga journey tetap low-friction sekaligus memberi ruang untuk memastikan stok, harga terbaru, dan detail order sebelum transaksi.</p></div>
           <div class="steps">
-            <div class="step"><span>1</span><h3>Lihat offer</h3><p>Produk, status, bonus, dan harga berada di halaman yang sama.</p></div>
-            <div class="step"><span>2</span><h3>Klik WhatsApp</h3><p>Pesan otomatis sudah membawa konteks produk yang kamu lihat.</p></div>
-            <div class="step"><span>3</span><h3>Konfirmasi</h3><p>Tim Equabolix mengonfirmasi stok dan harga terbaru sebelum transaksi.</p></div>
+            <div class="step">
+              <div class="step__top"><span class="step__number">1</span><i class="step__icon fa-solid fa-box-open" aria-hidden="true"></i></div>
+              <h3>Lihat offer</h3><p>Produk, status, bonus, dan harga berada di halaman yang sama.</p>
+            </div>
+            <div class="step">
+              <div class="step__top"><span class="step__number">2</span><i class="step__icon fa-solid fa-comments" aria-hidden="true"></i></div>
+              <h3>Klik WhatsApp</h3><p>Pesan otomatis sudah membawa konteks produk yang kamu lihat.</p>
+            </div>
+            <div class="step">
+              <div class="step__top"><span class="step__number">3</span><i class="step__icon fa-solid fa-circle-check" aria-hidden="true"></i></div>
+              <h3>Konfirmasi</h3><p>Tim Equabolix mengonfirmasi stok dan harga terbaru sebelum transaksi.</p>
+            </div>
           </div>
           <a class="btn btn--dark js-wa" href="#" data-message="Halo Equabolix, saya sudah melihat detail paket Retatrutide 10 mg Research Series. Saya ingin konfirmasi stok dan proses order.">Mulai konfirmasi via WhatsApp <span aria-hidden="true">&#8599;</span></a>
         </div>

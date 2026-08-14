@@ -94,6 +94,10 @@ assets/bac-water-packaging-board.png
 assets/active-woman.png + assets/active-man.png
 - Masterbrand progress / balanced-life section only.
 
+assets/fontawesome/
+- Self-hosted Font Awesome Free 7.3.1 used for the three order-step icons.
+- Includes the required CSS, solid webfont, and Font Awesome LICENSE.txt.
+
 WHAT CHANGED FROM V3
 --------------------
 - Preserved the clean, bright, teal/coral visual DNA, spacing, typography, cards,
@@ -123,4 +127,3 @@ DEPLOYMENT CHECKLIST
 [ ] Upload index.html, styles.css, script.js, robots.txt, and the complete assets folder.
 [ ] Test one WhatsApp CTA on the live domain.
 [ ] Confirm analytics receives the whatsapp_click event if a dataLayer consumer is used.
-
