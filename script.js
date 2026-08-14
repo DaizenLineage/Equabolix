@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js");
+
 /**
  * EQUABOLIX SITE CONFIG
  * Ganti 2 nilai ini saja untuk update nomor WhatsApp dan harga di seluruh website.
@@ -40,14 +42,31 @@ if (toggle && navLinks) {
   toggle.addEventListener("click", () => {
     const open = document.body.classList.toggle("menu-open");
     toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Tutup menu" : "Buka menu");
   });
   navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
     document.body.classList.remove("menu-open");
     toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Buka menu");
   }));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      document.body.classList.remove("menu-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Buka menu");
+    }
+  });
 }
 
-const revealTargets = document.querySelectorAll(".bundle-card,.value-card,.product-media,.product-copy,.trust-copy,.trust-card,.packaging-gallery figure,.step,.faq-list details,.person-card,.people-copy,.people-stage");
+const faqItems = document.querySelectorAll(".faq-list details");
+faqItems.forEach((item) => item.addEventListener("toggle", () => {
+  if (!item.open) return;
+  faqItems.forEach((other) => {
+    if (other !== item) other.open = false;
+  });
+}));
+
+const revealTargets = document.querySelectorAll(".friction-card,.bundle-card,.value-card,.comparison-panel,.product-media,.product-copy,.product-proof__head,.trust-copy,.trust-card,.packaging-gallery figure,.step,.faq-list details,.people-copy,.people-stage");
 revealTargets.forEach((el) => el.classList.add("reveal"));
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {

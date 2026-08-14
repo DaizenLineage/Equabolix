@@ -195,3 +195,101 @@ footer{background:#022B30;color:white;padding:56px 0 86px}.footer__grid{display:
     font-size:16px;
   }
 }
+
+/* Brand Bible V2 refinement: preserve the V3 visual system while improving
+   product-status hierarchy, value clarity, and responsive image behavior. */
+.hero__copy,.hero__visual,.product-copy,.product-media{min-width:0}
+.brand img{width:176px;height:48px;object-fit:cover;object-position:center}
+.footer__brand img{width:170px;height:46px;object-fit:cover;object-position:center;filter:brightness(0) invert(1)}
+.hero__grid{grid-template-columns:minmax(0,1.04fr) minmax(430px,.96fr);gap:42px}
+.hero__copy h1{font-size:clamp(48px,4.8vw,68px);max-width:690px}
+.status-notice{display:flex;align-items:center;gap:12px;width:max-content;max-width:100%;margin:0 0 19px;padding:9px 13px;border:1px solid rgba(255,96,104,.28);border-radius:14px;background:#FFF8F7}
+.status-notice span{font-family:"Montserrat",sans-serif;font-size:8px;font-weight:800;letter-spacing:.13em;color:var(--coral)}
+.status-notice strong{font-size:11px;color:var(--ink)}
+.product-stage--hero{height:590px;padding:18px;overflow:hidden}
+.hero-vial{position:relative;z-index:2;width:91%;height:91%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 28px 28px rgba(39,78,79,.14))}
+.stage-status{position:absolute;z-index:5;right:22px;top:21px;padding:7px 10px;border-radius:999px;background:var(--coral);color:white;font-family:"Montserrat",sans-serif;font-size:8px;font-weight:800;letter-spacing:.1em}
+.bac-mini--hero{width:128px;height:142px;right:18px;bottom:18px}
+.bac-mini--hero img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.floating-card--price{left:18px;bottom:18px}
+.floating-card--clear{right:16px;top:86px}
+
+.friction-section{background:var(--cream)}
+.friction-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.friction-card{position:relative;min-height:270px;padding:27px;border:1px solid var(--line);border-radius:30px;background:rgba(255,255,255,.72);display:flex;flex-direction:column;justify-content:flex-end}
+.friction-card>span{position:absolute;right:24px;top:21px;font-family:"Montserrat",sans-serif;font-size:11px;font-weight:800}
+.friction-card small{font-family:"Montserrat",sans-serif;font-size:9px;font-weight:800;letter-spacing:.12em;color:var(--teal-deep)}
+.friction-card h3{font-size:24px;letter-spacing:-.035em;margin:9px 0 8px}
+.friction-card p{margin:0;color:var(--muted);font-size:14px}
+
+.comparison-panel{margin-top:18px;padding:28px;border-radius:30px;background:var(--ink);color:white;display:grid;grid-template-columns:.85fr 1.35fr;gap:42px;align-items:center}
+.comparison-panel__intro h3{font-size:25px;letter-spacing:-.035em;margin:9px 0 0}
+.comparison-panel dl{margin:0;display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,.14);border-radius:20px;overflow:hidden}
+.comparison-panel dl div{padding:15px 17px;display:grid;gap:2px}
+.comparison-panel dl div:nth-child(odd){border-right:1px solid rgba(255,255,255,.14)}
+.comparison-panel dl div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.14)}
+.comparison-panel dt{font-size:9px;color:#9DB7B5;letter-spacing:.08em;text-transform:uppercase}
+.comparison-panel dd{margin:0;font-size:13px;font-weight:800}
+
+.product-proof{margin-top:80px}
+.product-proof__head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end;margin-bottom:25px}
+.product-proof__head h3{font-size:30px;letter-spacing:-.035em;margin:9px 0 0}
+.product-proof__head p{margin:0;color:var(--muted)}
+.packaging-gallery img{aspect-ratio:4/3;object-fit:cover}
+
+.order-section{padding-top:108px}
+.people-layout{grid-template-columns:.8fr 1.2fr}
+.people-visual-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
+.people-stage{position:relative;margin:0;background:white}
+.people-stage img{width:100%;height:540px;object-fit:cover;object-position:center top}
+.people-stage--runner{transform:translateY(-24px)}
+.people-stage figcaption{position:absolute;left:14px;bottom:14px;padding:7px 10px;border-radius:999px;background:rgba(0,59,66,.88);color:white;font-family:"Montserrat",sans-serif;font-size:8px;font-weight:800;letter-spacing:.12em}
+.progress-points{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+.progress-points span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:white;font-size:11px;font-weight:800}
+.people-copy .people-note{margin:0;font-size:11px;line-height:1.6;color:#7B8989}
+
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(18px)}
+.js .reveal.is-visible{opacity:1;transform:none}
+
+@media(max-width:1100px){
+  .hero__grid{grid-template-columns:minmax(0,1fr) minmax(390px,.86fr);gap:28px}
+  .hero__copy h1{font-size:clamp(46px,5.2vw,59px)}
+  .product-stage--hero{height:555px}
+}
+@media(max-width:980px){
+  .hero__grid{grid-template-columns:1fr;gap:35px}
+  .hero__copy h1{max-width:760px;font-size:clamp(54px,8vw,74px)}
+  .hero__visual{min-height:630px}
+  .product-stage--hero{height:590px;min-height:0;max-width:580px}
+  .friction-grid{grid-template-columns:1fr}
+  .friction-card{min-height:210px}
+  .comparison-panel{grid-template-columns:1fr}
+  .product-proof__head{grid-template-columns:1fr}
+  .people-layout{grid-template-columns:1fr;gap:48px}
+  .people-stage img{height:520px}
+}
+@media(max-width:640px){
+  .brand img{width:150px;height:42px}
+  .hero__copy h1{font-size:clamp(42px,12vw,54px)}
+  .status-notice{align-items:flex-start;flex-direction:column;gap:3px}
+  .hero__visual{min-height:480px}
+  .product-stage--hero{height:470px;min-height:0;padding:12px}
+  .hero-vial{width:96%;height:94%}
+  .stage-status{right:12px;top:50px}
+  .floating-card--clear{display:none}
+  .bac-mini--hero{width:104px;height:112px;right:10px;bottom:10px}
+  .floating-card--price{left:10px;bottom:10px;width:162px}
+  .friction-card{min-height:200px;padding:23px}
+  .comparison-panel{padding:23px;gap:24px}
+  .comparison-panel dl{grid-template-columns:1fr}
+  .comparison-panel dl div{border-bottom:1px solid rgba(255,255,255,.14)!important;border-right:0!important}
+  .comparison-panel dl div:last-child{border-bottom:0!important}
+  .product-proof{margin-top:60px}
+  .product-proof__head h3{font-size:27px}
+  .order-section{padding-top:76px}
+  .people-visual-grid{gap:8px}
+  .people-stage{border-radius:24px}
+  .people-stage img{height:360px}
+  .people-stage--runner{transform:translateY(-12px)}
+}
