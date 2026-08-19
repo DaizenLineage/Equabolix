@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css?v=7.3.1" />
   <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css?v=7.3.1" />
-  <link rel="stylesheet" href="styles.css?v=4.5" />
+  <link rel="stylesheet" href="styles.css?v=4.6" />
 </head>
 <body>
   <div class="announcement">
@@ -57,8 +57,11 @@
           </div>
 
           <div class="hero__offerline">
-            <span>Harga paket</span>
-            <strong data-price>Rp1.690.000</strong>
+            <span class="price-label">Launch Price</span>
+            <div class="price-stack">
+              <strong data-price>Rp1.100.000</strong>
+              <small class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></small>
+            </div>
           </div>
 
           <div class="bonus-strip" aria-label="Bonus dalam paket">
@@ -84,7 +87,7 @@
               <span>BONUS</span>
               <img src="assets/bac-water-bottle.png" alt="Vial Equabolix BAC Water" />
             </div>
-            <div class="floating-card floating-card--price"><small>PACKAGE VALUE</small><strong data-price>Rp1.690.000</strong><span>bonus included</span></div>
+            <div class="floating-card floating-card--price"><small>LAUNCH PRICE</small><strong data-price>Rp1.100.000</strong><span class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></span></div>
             <div class="floating-card floating-card--clear"><i></i> Clear status. Clear value.</div>
           </div>
         </div>
@@ -143,7 +146,7 @@
 
         <div class="offer-total">
           <div><span>RETATRUTIDE RESEARCH SERIES BUNDLE</span><strong>1 + 1 + 4 + 4</strong></div>
-          <div class="offer-total__price"><span>Harga paket</span><strong data-price>Rp1.690.000</strong></div>
+          <div class="offer-total__price"><span>Launch Price</span><strong data-price>Rp1.100.000</strong><small class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></small></div>
           <a class="btn btn--primary js-wa" href="#" data-message="Halo Equabolix, saya ingin cek ketersediaan bundle Retatrutide 10 mg Research Series. Isi paket: 1 Retatrutide, 1 BAC Water, 4 syringe, dan 4 alcohol swab.">Cek ketersediaan <span aria-hidden="true">&#8599;</span></a>
         </div>
       </div>
@@ -165,7 +168,7 @@
         <div class="comparison-panel" aria-label="Ringkasan value paket">
           <div class="comparison-panel__intro"><span class="kicker">VALUE CHECK</span><h3>Empat hal yang sudah jelas sebelum chat.</h3></div>
           <dl>
-            <div><dt>Harga paket</dt><dd data-price>Rp1.690.000</dd></div>
+            <div><dt>Launch Price</dt><dd><span data-price>Rp1.100.000</span><small class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></small></dd></div>
             <div><dt>Isi offer</dt><dd>1 + 1 + 4 + 4</dd></div>
             <div><dt>Status utama</dt><dd>Research use only</dd></div>
             <div><dt>Konfirmasi</dt><dd>Langsung via WhatsApp</dd></div>
@@ -185,7 +188,7 @@
           <span class="kicker">PRODUCT STATUS FIRST</span>
           <h2>Retatrutide <span>10 mg</span></h2>
           <p class="product-subtitle">Research use only. Not for human use.</p>
-          <div class="price-row"><strong data-price>Rp1.690.000</strong><span>/ bundle</span></div>
+          <div class="price-row"><div class="price-stack"><small class="price-label">Launch Price</small><strong data-price>Rp1.100.000</strong><small class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></small></div><span>/ bundle</span></div>
           <p class="product-description">Informasi halaman dibatasi pada hal yang dapat dinilai secara transparan: label produk, isi paket, harga, status, dan jalur konfirmasi. Tidak ada klaim hasil, protokol dosis, atau rekomendasi penggunaan personal.</p>
           <div class="spec-list">
             <div><span>Product</span><strong>Retatrutide</strong></div>
@@ -278,7 +281,7 @@
         <div class="faq-list">
           <details><summary>Apa status produk Retatrutide di halaman ini?</summary><p>Retatrutide 10 mg berada dalam Equabolix Research Series dan ditandai research use only serta not for human use.</p></details>
           <details><summary>Apa saja isi paketnya?</summary><p>1 vial Retatrutide 10 mg, bonus 1 vial BAC Water, 4 syringe, dan 4 alcohol swab.</p></details>
-          <details><summary>Berapa harga paketnya?</summary><p>Harga yang ditampilkan saat ini adalah <span data-price>Rp1.690.000</span>. Stok dan harga transaksi terbaru dikonfirmasi melalui WhatsApp sebelum order.</p></details>
+          <details><summary>Berapa harga paketnya?</summary><p>Launch Price saat ini adalah <strong data-price>Rp1.100.000</strong>, dengan harga reguler <span data-regular-price>Rp1.250.000</span>. Stok dan harga transaksi terbaru dikonfirmasi melalui WhatsApp sebelum order.</p></details>
           <details><summary>Apakah bonus perlu ditambahkan terpisah?</summary><p>Tidak. BAC Water, 4 syringe, dan 4 alcohol swab ditampilkan sebagai bonus dalam paket yang sama.</p></details>
           <details><summary>Bagaimana cara melakukan konfirmasi order?</summary><p>Klik salah satu tombol WhatsApp. Pesan sudah terisi otomatis agar tim Equabolix mengetahui produk dan paket yang sedang kamu tanyakan.</p></details>
           <details><summary>Apakah Equabolix memberikan dosis atau instruksi injeksi?</summary><p>Tidak. Website ini tidak menyediakan dosing protocol, instruksi injeksi, diagnosis, resep, atau rekomendasi penggunaan personal.</p></details>
@@ -289,7 +292,7 @@
     <section class="final-cta">
       <div class="container final-cta__inner">
         <div><span class="kicker">FAIR VALUE. CLEAR CHOICE.</span><h2>Sudah cukup jelas untuk menilai paketnya?</h2><p>Konfirmasi stok dan harga terbaru langsung dengan tim Equabolix.</p></div>
-        <div class="final-cta__action"><strong data-price>Rp1.690.000</strong><a class="btn btn--primary js-wa" href="#" data-message="Halo Equabolix, saya ingin konfirmasi stok dan order paket Retatrutide 10 mg Research Series.">Cek stok sekarang <span aria-hidden="true">&#8599;</span></a></div>
+        <div class="final-cta__action"><div class="final-price"><small>Launch Price</small><strong data-price>Rp1.100.000</strong><span class="regular-price">Harga reguler <span data-regular-price>Rp1.250.000</span></span></div><a class="btn btn--primary js-wa" href="#" data-message="Halo Equabolix, saya ingin konfirmasi stok dan order paket Retatrutide 10 mg Research Series.">Cek stok sekarang <span aria-hidden="true">&#8599;</span></a></div>
       </div>
     </section>
   </main>
@@ -303,10 +306,10 @@
   </footer>
 
   <div class="mobile-buybar">
-    <div><small>Research Series Bundle</small><strong data-price>Rp1.690.000</strong></div>
+    <div><small>Launch Price</small><strong data-price>Rp1.100.000</strong><span class="mobile-regular-price">Reguler <span data-regular-price>Rp1.250.000</span></span></div>
     <a class="btn btn--primary js-wa" href="#" data-message="Halo Equabolix, saya ingin cek stok paket Retatrutide 10 mg Research Series.">WhatsApp</a>
   </div>
 
-  <script src="script.js?v=4.0"></script>
+  <script src="script.js?v=4.1"></script>
 </body>
 </html>

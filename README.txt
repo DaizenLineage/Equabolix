@@ -14,9 +14,13 @@ Open script.js and update EQUABOLIX_CONFIG:
    Use the real international number without the + sign.
    The included value 6281234567890 is a placeholder inherited from V3.
 
-2. displayPrice
-   The current display value is Rp1.690.000.
+2. launchPrice
+   The current Launch Price is Rp1.100.000.
    Changing it once updates every [data-price] element and WhatsApp analytics event.
+
+3. regularPrice
+   The current regular reference price is Rp1.250.000.
+   Changing it once updates every [data-regular-price] element and WhatsApp analytics event.
 
 FINAL DECISION JOURNEY
 ----------------------
@@ -123,7 +127,7 @@ CONTENT GUARDRAILS
 DEPLOYMENT CHECKLIST
 --------------------
 [ ] Replace the placeholder WhatsApp number in script.js.
-[ ] Confirm the live displayPrice and bundle contents.
+[ ] Confirm the live launchPrice, regularPrice, and bundle contents.
 [ ] Upload index.html, styles.css, script.js, robots.txt, and the complete assets folder.
 [ ] Test one WhatsApp CTA on the live domain.
 [ ] Confirm analytics receives the whatsapp_click event if a dataLayer consumer is used.
