@@ -1,0 +1,69 @@
+EQUABOLIX V5.1 CHANGELOG
+========================
+
+FILES CHANGED
+-------------
+- index.html
+- partner/index.html
+- script.js
+- README.txt
+
+FILES CREATED
+-------------
+- partner/retatrutide/index.html
+- styles-refresh.css
+- CHANGELOG-V5.1.txt
+
+PAGES
+-----
+- / is now the Equabolix retail masterbrand and full product catalog.
+- /partner/ is now a price-visible general B2B reseller page.
+- /partner/retatrutide/ is a new high-intent Retatrutide B2B landing page.
+
+PRICING
+-------
+- Added all 11 retail price entries.
+- Added all 11 partner price entries.
+- Retatrutide retail: Rp2.500.000.
+- Retatrutide partner: Rp2.000.000.
+- All pricing is centralized in EQUABOLIX_CONFIG.products in script.js.
+- Removed legacy Rp1.100.000 / Rp1.250.000 references from the project.
+
+SECTIONS REMOVED OR REDUCED
+---------------------------
+- Reduced repeated status/compliance-led sections on the homepage.
+- Removed Retatrutide-only bundle and old launch-price framing.
+- Removed hidden-wholesale-price framing from the partner catalog.
+- Consolidated repetitive clarity/transparency copy.
+
+SECTIONS ADDED OR RESTRUCTURED
+------------------------------
+- Retail hero with Retatrutide as hero product.
+- Featured products: Retatrutide, GHK-CU, Tirzepatide.
+- Full retail gallery with filters and official retail pricing.
+- Partner catalog with partner price and official retail anchor.
+- Partner economics, enablement, qualification, and reorder flow.
+- Dedicated Retatrutide partner economics and hard-conversion route.
+
+CRO IMPROVEMENTS
+----------------
+- Product and price appear before long-form partner explanation.
+- Distinct WhatsApp intent messages for retail, partner, and Retatrutide LP.
+- UTM attribution and source_page context retained in WhatsApp URLs.
+- Product-specific CTAs carry product and displayed-price context.
+- Mobile Retatrutide LP exposes product, partner price, retail anchor, and CTA above fold.
+
+RESPONSIVE AND QA
+-----------------
+- Validated at 375, 390, 430, 768, and desktop widths.
+- No horizontal overflow or broken local HTML asset paths detected.
+- Mobile menu, product filters, internal route navigation, and WhatsApp URL encoding tested.
+- No browser runtime errors detected.
+
+OWNER INPUT STILL REQUIRED
+--------------------------
+- Replace the placeholder WhatsApp number 6281234567890 in script.js.
+- Add the supplied official PNGs for Tirzepatide, Tesamorelin, BPC-157,
+  CJC-1295, KLOW Stack, GHK-CU, HGH, Semax, and Epitalon inside the project.
+  The sandbox could not read the Downloads copies, so branded vial fallbacks
+  are used instead of shipping broken image paths or fake product mockups.
