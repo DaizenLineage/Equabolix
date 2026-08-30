@@ -1,5 +1,5 @@
-EQUABOLIX STATIC WEBSITE — BRAND BIBLE V2 UPDATE
-=================================================
+EQUABOLIX STATIC WEBSITE — MASTERBRAND + PARTNER V5
+====================================================
 
 STATUS
 ------
@@ -34,6 +34,17 @@ FINAL DECISION JOURNEY
 8. Masterbrand progress territory
 9. FAQ
 10. Final WhatsApp CTA
+
+V5 COMMERCIAL ROUTES
+--------------------
+Direct: /index.html
+- Retatrutide-led product, value, trust, offer, and direct WhatsApp flow.
+
+Partner: /partner/
+- Dedicated B2B funnel for qualified reseller leads, catalog interest,
+  partner economics, supply/support, short qualification, and WhatsApp.
+- Wholesale prices are not published publicly.
+- Retatrutide remains the hero product and launch wedge.
 
 FINAL COPY BY SECTION
 ---------------------
@@ -116,6 +127,36 @@ WHAT CHANGED FROM V3
 - Added keyboard-friendly menu behavior and single-open FAQ interaction.
 - Preserved UTM attribution and the whatsapp_click dataLayer event.
 
+WHAT CHANGED IN V5
+------------------
+- Added a compact Equabolix Partner entry point to the homepage and navigation.
+- Added the static /partner route without changing the direct homepage hierarchy.
+- Added a reusable, data-driven partner catalog in script.js.
+- Separated direct and partner WhatsApp intent and analytics.
+- Added partner qualification that continues directly to WhatsApp.
+- Added B2B SEO metadata, mobile catalog behavior, and a compact sticky partner CTA.
+
+V5 ANALYTICS EVENTS
+-------------------
+- whatsapp_click (legacy continuity)
+- direct_whatsapp_start
+- partner_whatsapp_start
+- partner_cta_click
+- catalog_product_click
+- partner_product_interest
+- partner_catalog_filter
+- partner_qualification_submit
+
+OWNER INPUT STILL REQUIRED
+--------------------------
+- Replace the placeholder WhatsApp number 6281234567890.
+- Confirm MOQ and current partner commercial terms per SKU.
+- Confirm current availability before publishing operational claims.
+- Add approved product imagery for Tirzepatide, BPC-157, CJC-1295 blend,
+  Epitalon, GHK-CU, HGH Somatropin, KLOW Stack, Semax, and Tesamorelin.
+- Confirm which product information sheets, testing documents, and approved
+  descriptions are verified and ready for partner distribution.
+
 CONTENT GUARDRAILS
 ------------------
 - Retatrutide 10 mg is consistently identified as Research Series.
@@ -128,6 +169,6 @@ DEPLOYMENT CHECKLIST
 --------------------
 [ ] Replace the placeholder WhatsApp number in script.js.
 [ ] Confirm the live launchPrice, regularPrice, and bundle contents.
-[ ] Upload index.html, styles.css, script.js, robots.txt, and the complete assets folder.
+[ ] Upload index.html, partner/index.html, styles.css, script.js, robots.txt, and the complete assets folder.
 [ ] Test one WhatsApp CTA on the live domain.
-[ ] Confirm analytics receives the whatsapp_click event if a dataLayer consumer is used.
+[ ] Confirm analytics receives direct and partner events if a dataLayer consumer is used.
