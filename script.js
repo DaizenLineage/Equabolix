@@ -7,23 +7,25 @@ document.documentElement.classList.add("js");
  */
 const EQUABOLIX_CONFIG = {
   whatsappNumber: "6281234567890", // OWNER INPUT: ganti dengan nomor WhatsApp aktif.
+  partnerAccessCode: "EQUA2026",
   products: [
-    { key: "retatrutide", name: "Retatrutide", strength: "10 mg", format: "1 vial", category: "metabolic", categoryLabel: "Metabolic", descriptor: "Hero metabolic research product", retail: "Rp2.500.000", partner: "Rp2.000.000", accent: "#0F7778", image: "retatrutide-pack.webp", featured: 1 },
-    { key: "tirzepatide", name: "Tirzepatide", strength: "10 mg", format: "1 vial", category: "metabolic", categoryLabel: "Metabolic", descriptor: "Metabolic research product", retail: "Rp1.500.000", partner: "Rp1.200.000", accent: "#C89224", retailImage: "products/Tirzepatide.png", featured: 3 },
-    { key: "tesamorelin", name: "Tesamorelin", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp2.300.000", partner: "Rp1.850.000", accent: "#1769AF", retailImage: "products/Tesamorelin.png" },
-    { key: "bpc157", name: "BPC-157", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp1.300.000", partner: "Rp1.000.000", accent: "#087047", retailImage: "products/BPC-157.png" },
-    { key: "cjc1295", name: "CJC-1295 (No DAC) + Ipamorelin Blend", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research blend", retail: "Rp2.000.000", partner: "Rp1.600.000", accent: "#B0245B", retailImage: "products/CJC-1295.png" },
-    { key: "klow", name: "KLOW Stack", strength: "80 mg", format: "1 vial", category: "kit", categoryLabel: "Research stack", descriptor: "Multi-component research stack", retail: "Rp3.600.000", partner: "Rp3.000.000", accent: "#5B3A9B", retailImage: "products/KLOW.png" },
-    { key: "ghkcu", name: "GHK-CU", strength: "100 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Copper peptide research product", retail: "Rp1.300.000", partner: "Rp1.000.000", accent: "#6667C8", retailImage: "products/GHK-CU.png", featured: 2 },
-    { key: "hgh", name: "HGH Somatropin", strength: "15 IU", format: "1 kit · 10 vials", category: "kit", categoryLabel: "Research kit", descriptor: "Multi-vial research kit", retail: "Rp3.250.000", partner: "Rp2.700.000", accent: "#2369B2", retailImage: "products/HGH.png" },
-    { key: "semax", name: "Semax", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp950.000", partner: "Rp750.000", accent: "#6243A3", retailImage: "products/Semax.png" },
-    { key: "epitalon", name: "Epitalon", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp780.000", partner: "Rp600.000", accent: "#E9750A", retailImage: "products/Epitalon.png" },
-    { key: "bacwater", name: "BAC Water", strength: "1 vial", format: "Supporting product", category: "support", categoryLabel: "Supporting value", descriptor: "Supporting product; availability by confirmation", retail: "Contact for price", partner: "Contact for price", accent: "#0D68B6", image: "bac-water-pack.webp" }
+    { key: "retatrutide", name: "Retatrutide", strength: "10 mg", format: "1 vial", category: "retatrutide", categoryLabel: "Retatrutide", descriptor: "Hero metabolic research product", retail: "Rp1.200.000", partner: "Rp900.000", accent: "#0F7778", image: "retatrutide-pack.webp", featured: 1 },
+    { key: "retatrutide30", name: "Retatrutide", strength: "30 mg", format: "1 vial", category: "retatrutide", categoryLabel: "Retatrutide", descriptor: "Higher-strength metabolic research product", retail: "Rp1.900.000", partner: "Rp1.500.000", accent: "#0F7778", image: "products/Retatrutide30.png", featured: 2 },
+    { key: "ghkcu", name: "GHK-Cu", strength: "100 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Copper peptide research product", retail: "Rp650.000", partner: "Rp500.000", accent: "#6667C8", image: "products/GHK-CU.png", featured: 3 },
+    { key: "tesamorelin", name: "Tesamorelin", strength: "", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp1.200.000", partner: "Rp900.000", accent: "#1769AF", image: "products/Tesamorelin.png" },
+    { key: "tirzepatide", name: "Tirzepatide", strength: "", format: "1 vial", category: "metabolic", categoryLabel: "Metabolic", descriptor: "Metabolic research product", retail: "Rp800.000", partner: "Rp600.000", accent: "#C89224", image: "products/Tirzepatide.png" },
+    { key: "cjc1295", name: "CJC-1295 + Ipamorelin", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research blend", retail: "Rp1.200.000", partner: "Rp900.000", accent: "#B0245B", image: "products/CJC-1295.png" },
+    { key: "bpc157", name: "BPC-157", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp650.000", partner: "Rp500.000", accent: "#087047", image: "products/BPC-157.png" },
+    { key: "bpc157tb500", name: "BPC-157 + TB-500", strength: "20 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research blend", retail: "Rp1.200.000", partner: "Rp900.000", accent: "#B0245B", image: "products/BPC-157 + TB-500.png" },
+    { key: "motsc", name: "MOTS-C", strength: "40 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Mitochondrial peptide research product", retail: "Rp1.500.000", partner: "Rp1.200.000", accent: "#9B102A", image: "products/MOTS-C.png" },
+    { key: "selank", name: "Selank", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp520.000", partner: "Rp400.000", accent: "#4967CE", image: "products/Selank.png" },
+    { key: "semax", name: "Semax", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp520.000", partner: "Rp400.000", accent: "#6243A3", image: "products/Semax.png" },
+    { key: "pt141", name: "PT-141", strength: "10 mg", format: "1 vial", category: "peptide", categoryLabel: "Research peptide", descriptor: "Peptide research product", retail: "Rp520.000", partner: "Rp400.000", accent: "#B0245B", image: "products/PT-141.png" }
   ]
 };
 
 const pageType = document.body.dataset.page || "retail";
-const assetPrefix = pageType === "partner-retatrutide" ? "../../assets/" : pageType === "partner" ? "../assets/" : "assets/";
+const assetPrefix = pageType.endsWith("retatrutide") ? "../../assets/" : pageType.startsWith("partner") ? "../assets/" : "assets/";
 const productByKey = Object.fromEntries(EQUABOLIX_CONFIG.products.map((product) => [product.key, product]));
 
 document.querySelectorAll("[data-product-price]").forEach((element) => {
@@ -54,31 +56,70 @@ const pushAnalytics = (event, payload = {}) => {
   window.dataLayer.push({ event, ...payload });
 };
 
+const partnerGate = document.querySelector("[data-partner-gate]");
+if (partnerGate) {
+  const gateForm = partnerGate.querySelector("[data-partner-gate-form]");
+  const gateInput = partnerGate.querySelector("[data-partner-gate-input]");
+  const gateError = partnerGate.querySelector("[data-partner-gate-error]");
+  const accessKey = "equabolix_partner_access";
+  const unlockPartnerPage = () => {
+    document.body.classList.remove("partner-gated");
+    partnerGate.hidden = true;
+    try { sessionStorage.setItem(accessKey, "granted"); } catch (_) { /* Session storage is optional. */ }
+    pushAnalytics("partner_access_granted", { source_page: pageType });
+  };
+
+  try {
+    if (sessionStorage.getItem(accessKey) === "granted") unlockPartnerPage();
+  } catch (_) { /* Keep the gate visible when storage is unavailable. */ }
+
+  gateForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (gateInput?.value.trim() === EQUABOLIX_CONFIG.partnerAccessCode) {
+      unlockPartnerPage();
+      return;
+    }
+    if (gateError) gateError.hidden = false;
+    gateInput?.setAttribute("aria-invalid", "true");
+    gateInput?.focus();
+    pushAnalytics("partner_access_denied", { source_page: pageType });
+  });
+
+  gateInput?.addEventListener("input", () => {
+    if (gateError) gateError.hidden = true;
+    gateInput.removeAttribute("aria-invalid");
+  });
+}
+
 const buildWhatsAppHref = (baseMessage, sourcePage = pageType) => {
   const context = [savedAttribution, `source_page=${sourcePage}`].filter(Boolean).join(" | ");
   return `https://wa.me/${EQUABOLIX_CONFIG.whatsappNumber}?text=${encodeURIComponent(`${applyMessageTokens(baseMessage)}\n\nSource: ${context}`)}`;
 };
 
-const productVisual = (product, catalogScope = "retail") => {
-  const image = catalogScope === "retail" ? product.retailImage || product.image : product.image;
-  return image
-  ? `<img src="${assetPrefix}${image}" alt="Equabolix ${product.name} ${product.strength}" width="960" height="960" loading="lazy" />`
-  : `<div class="product-visual-fallback" aria-label="Visual ${product.name} belum terpasang"><i class="fa-solid fa-vial" aria-hidden="true"></i><span>${product.strength}</span></div>`;
+const productLabel = (product) => [product.name, product.strength].filter(Boolean).join(" ");
+
+const productVisual = (product) => {
+  if (!product.image) return "";
+  return `<img src="${assetPrefix}${product.image}" alt="Equabolix ${productLabel(product)}" width="960" height="960" loading="lazy" data-product-image />`;
 };
 
 const renderRetailCard = (product, featured = false) => {
-  const message = `Halo Equabolix, saya ingin bertanya mengenai ${product.name} ${product.strength}. Harga retail yang saya lihat ${product.retail}. Mohon cek ketersediaan dan harga terbaru.`;
+  const label = productLabel(product);
+  const strength = product.strength ? `<p class="commerce-card__strength">${product.strength}</p>` : "";
+  const message = `Halo Equabolix, saya ingin bertanya mengenai ${label}. Harga retail yang saya lihat ${product.retail}. Mohon cek ketersediaan dan harga terbaru.`;
   return `<article class="commerce-card${featured ? " commerce-card--featured" : ""}" data-category="${product.category}" data-catalog-scope="retail" style="--product-accent:${product.accent}">
-    <div class="commerce-card__visual"><small>${featured ? "FEATURED PRODUCT" : product.categoryLabel}</small>${productVisual(product, "retail")}</div>
-    <div class="commerce-card__body"><div class="commerce-card__meta"><span>${product.categoryLabel}</span><span>${product.format}</span></div><h3>${product.name}</h3><p class="commerce-card__strength">${product.strength}</p><p class="commerce-card__descriptor">${product.descriptor}</p><div class="commerce-card__price"><small>OFFICIAL RETAIL</small><strong>${product.retail}</strong></div><a class="btn ${featured ? "btn--primary" : "btn--dark"} js-wa" href="#" data-source-page="retail" data-product="${product.name} ${product.strength}" data-location="retail_catalog" data-message="${message}">Ask This Product <span aria-hidden="true">&#8599;</span></a></div>
+    <div class="commerce-card__visual"><small>${featured ? "FEATURED PRODUCT" : product.categoryLabel}</small>${productVisual(product)}</div>
+    <div class="commerce-card__body"><div class="commerce-card__meta"><span>${product.categoryLabel}</span><span>${product.format}</span></div><h3>${product.name}</h3>${strength}<p class="commerce-card__descriptor">${product.descriptor}</p><div class="commerce-card__price"><small>OFFICIAL RETAIL</small><strong>${product.retail}</strong></div><a class="btn ${featured ? "btn--primary" : "btn--dark"} js-wa" href="#" data-source-page="retail" data-product="${label}" data-location="retail_catalog" data-message="${message}">Ask This Product <span aria-hidden="true">&#8599;</span></a></div>
   </article>`;
 };
 
 const renderPartnerCard = (product) => {
-  const message = `Halo Equabolix, saya ingin informasi partner untuk ${product.name} ${product.strength}. Partner price ${product.partner}, official retail ${product.retail}. Mohon cek stock, quantity, dan current terms.`;
+  const label = productLabel(product);
+  const strength = product.strength ? `<p class="commerce-card__strength">${product.strength}</p>` : "";
+  const message = `Halo Equabolix, saya ingin informasi partner untuk ${label}. Partner Price ${product.partner}, Retail Price ${product.retail}. Mohon cek stock, quantity, dan current terms.`;
   return `<article class="commerce-card commerce-card--partner${product.key === "retatrutide" ? " commerce-card--featured" : ""}" data-category="${product.category}" data-catalog-scope="partner" style="--product-accent:${product.accent}">
-    <div class="commerce-card__visual"><small>${product.key === "retatrutide" ? "HERO PRODUCT" : product.categoryLabel}</small>${productVisual(product, "partner")}</div>
-    <div class="commerce-card__body"><div class="commerce-card__meta"><span>${product.categoryLabel}</span><span>${product.format}</span></div><h3>${product.name}</h3><p class="commerce-card__strength">${product.strength}</p><div class="commerce-card__partner-prices"><div><small>PARTNER PRICE</small><strong>${product.partner}</strong></div><div><small>OFFICIAL RETAIL</small><strong>${product.retail}</strong></div></div><a class="btn ${product.key === "retatrutide" ? "btn--primary" : "btn--dark"} js-wa" href="#" data-intent="partner" data-source-page="partner" data-product="${product.name} ${product.strength}" data-location="partner_catalog" data-message="${message}">Ask Availability <span aria-hidden="true">&#8599;</span></a></div>
+    <div class="commerce-card__visual"><small>${product.key === "retatrutide" ? "HERO PRODUCT" : product.categoryLabel}</small>${productVisual(product)}</div>
+    <div class="commerce-card__body"><div class="commerce-card__meta"><span>${product.categoryLabel}</span><span>${product.format}</span></div><h3>${product.name}</h3>${strength}<div class="commerce-card__partner-prices"><div><small>PARTNER PRICE</small><strong>${product.partner}</strong></div><div><small>RETAIL PRICE</small><strong>${product.retail}</strong></div></div><a class="btn ${product.key === "retatrutide" ? "btn--primary" : "btn--dark"} js-wa" href="#" data-intent="partner" data-source-page="${pageType}" data-product="${label}" data-location="partner_catalog" data-message="${message}">Ask Availability <span aria-hidden="true">&#8599;</span></a></div>
   </article>`;
 };
 
@@ -91,10 +132,16 @@ if (retailCatalogRoot) retailCatalogRoot.innerHTML = EQUABOLIX_CONFIG.products.m
 const partnerCatalogRoot = document.querySelector("[data-partner-catalog]");
 if (partnerCatalogRoot) partnerCatalogRoot.innerHTML = EQUABOLIX_CONFIG.products.map(renderPartnerCard).join("");
 
+document.querySelectorAll("[data-product-image]").forEach((image) => {
+  const hideBrokenImage = () => { image.hidden = true; };
+  image.addEventListener("error", hideBrokenImage, { once: true });
+  if (image.complete && image.naturalWidth === 0) hideBrokenImage();
+});
+
 const initWhatsAppLinks = (root = document) => {
   root.querySelectorAll(".js-wa:not([data-wa-ready])").forEach((link) => {
     const intent = link.dataset.intent || (pageType.startsWith("partner") ? "partner" : "retail");
-    const sourcePage = link.dataset.sourcePage || pageType;
+    const sourcePage = pageType.startsWith("partner-ads") ? pageType : (link.dataset.sourcePage || pageType);
     const baseMessage = link.dataset.message || (intent === "partner" ? "Halo Equabolix, saya ingin informasi mengenai Equabolix Partner." : "Halo Equabolix, saya ingin bertanya mengenai produk Equabolix.");
     link.href = buildWhatsAppHref(baseMessage, sourcePage);
     link.target = "_blank";
@@ -133,7 +180,7 @@ if (partnerForm) partnerForm.addEventListener("submit", (event) => {
   const product = formData.get("product");
   const message = ["Halo Equabolix, saya ingin informasi mengenai Equabolix Partner.", `Nama / business: ${formData.get("business")}`, `Saat ini menjual: ${formData.get("category")}`, `Typical quantity / demand: ${formData.get("demand")}`, `Produk yang diminati: ${product}`, `Kota / destination: ${formData.get("city")}`, "Mohon kirim current availability dan partner pricing."].join("\n");
   pushAnalytics("partner_qualification_submit", { product, source_page: pageType });
-  window.open(buildWhatsAppHref(message, "partner"), "_blank", "noopener,noreferrer");
+  window.open(buildWhatsAppHref(message, pageType), "_blank", "noopener,noreferrer");
 });
 
 const toggle = document.querySelector(".nav__toggle");

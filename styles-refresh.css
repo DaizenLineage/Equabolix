@@ -1,4 +1,21 @@
 /* Equabolix V5.1 commercial architecture — extends the established V5 tokens. */
+.partner-gated{overflow:hidden}
+.partner-gated>:not(.partner-access-gate){visibility:hidden}
+.partner-access-gate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 80% 10%,rgba(56,174,166,.32),transparent 34%),linear-gradient(145deg,#E7F2EF 0%,#F7F7F2 48%,#D8ECE8 100%)}
+.partner-access-gate[hidden]{display:none}
+.partner-access-card{width:min(100%,560px);padding:clamp(30px,5vw,52px);border:1px solid rgba(0,59,66,.12);border-radius:36px;background:rgba(255,255,255,.94);box-shadow:0 28px 90px rgba(0,59,66,.18);backdrop-filter:blur(16px)}
+.partner-access-card>img{display:block;width:min(230px,58%);height:auto;margin-bottom:42px}
+.partner-access-card h1{max-width:470px;margin:10px 0 14px;font-size:clamp(38px,6vw,58px);line-height:1;letter-spacing:-.055em}
+.partner-access-card>p{max-width:470px;margin:0 0 28px;color:var(--muted);font-size:15px}
+.partner-access-card>label{display:block;margin-bottom:8px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep)}
+.partner-access-field{display:grid;grid-template-columns:1fr auto;gap:10px}
+.partner-access-field input{min-width:0;height:52px;padding:0 17px;border:1px solid var(--line);border-radius:16px;background:white;color:var(--ink);font:600 16px "DM Sans",sans-serif;outline:none}
+.partner-access-field input:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(56,174,166,.15)}
+.partner-access-field input[aria-invalid="true"]{border-color:#B73939;box-shadow:0 0 0 4px rgba(183,57,57,.1)}
+.partner-access-field .btn{min-width:110px;border:0}
+.partner-access-card .partner-access-error{margin:10px 0 0;color:#A72D2D;font-size:12px;font-weight:700}
+.partner-access-card>.text-link{display:inline-flex;margin-top:26px;font-size:12px}
+@media(max-width:560px){.partner-access-gate{padding:14px}.partner-access-card{padding:28px 22px;border-radius:28px}.partner-access-card>img{margin-bottom:34px}.partner-access-field{grid-template-columns:1fr}.partner-access-field .btn{width:100%}}
 .site-refresh .site-header{background:color-mix(in srgb,var(--cream) 94%,transparent)}
 .site-refresh h2{font-size:clamp(38px,5vw,60px);letter-spacing:-.045em}
 .portfolio-hero{min-height:720px;display:flex;align-items:center;overflow:hidden}
@@ -20,8 +37,6 @@
 .commerce-card__visual:after{content:"";position:absolute;left:-15%;right:-15%;bottom:-22%;height:46%;border-radius:50%;background:color-mix(in srgb,var(--product-accent) 19%,transparent)}
 .commerce-card__visual>small{position:absolute;z-index:4;left:20px;top:17px;font-family:"Montserrat",sans-serif;font-size:8px;font-weight:800;letter-spacing:.13em;color:var(--product-accent)}
 .commerce-card__visual>img{position:relative;z-index:2;width:100%;height:230px;object-fit:contain;mix-blend-mode:multiply}
-.product-visual-fallback{position:relative;z-index:2;width:138px;height:186px;border-radius:24px 24px 32px 32px;border:3px solid color-mix(in srgb,var(--product-accent) 76%,var(--ink));background:rgba(255,255,255,.72);display:grid;place-items:center;color:var(--product-accent);filter:drop-shadow(0 19px 16px rgba(0,59,66,.12))}
-.product-visual-fallback:before{content:"";position:absolute;top:-18px;width:92px;height:26px;border-radius:12px 12px 7px 7px;background:var(--product-accent);box-shadow:0 7px 0 #CAD1D0}.product-visual-fallback i{font-size:48px}.product-visual-fallback span{position:absolute;bottom:18px;font-family:"Montserrat",sans-serif;font-weight:800;font-size:13px}
 .commerce-card__body{padding:22px;display:flex;flex:1;flex-direction:column;align-items:flex-start}.commerce-card__meta{width:100%;display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
 .commerce-card h3{font-size:clamp(21px,2vw,28px);line-height:1.08;letter-spacing:-.035em;margin:16px 0 3px;overflow-wrap:anywhere}.commerce-card__strength{margin:0;color:var(--product-accent);font-family:"Montserrat",sans-serif;font-size:21px;font-weight:700}.commerce-card__descriptor{color:var(--muted);font-size:13px;min-height:42px;margin:12px 0 18px}
 .commerce-card__price{display:grid;gap:2px;margin-top:auto;margin-bottom:16px}.commerce-card__price small,.commerce-card__partner-prices small{font-size:8px;font-weight:800;letter-spacing:.1em;color:var(--muted)}.commerce-card__price strong{font-family:"Montserrat",sans-serif;font-size:28px;letter-spacing:-.04em}.commerce-card .btn{width:100%;min-height:48px;padding-inline:14px}

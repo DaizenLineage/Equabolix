@@ -1,5 +1,13 @@
-EQUABOLIX V5.1 CHANGELOG
+EQUABOLIX V5.2 PRODUCT DATA UPDATE
 ========================
+
+V5.3 PARTNER ACCESS AND CATALOG IMAGE MAPPING
+---------------------------------------------
+- Added session passcode gate (EQUA2026) to /partner/ and /partner/retatrutide/.
+- Added ungated ads duplicates at /partner-ads/ and /partner-ads/retatrutide/.
+- Preserved UTM attribution and added ads-specific source_page tracking.
+- Mapped Retatrutide 30 mg, BPC-157 + TB-500, MOTS-C, Selank, and PT-141 to
+  their supplied product-image filenames in the centralized product config.
 
 FILES CHANGED
 -------------
@@ -20,14 +28,13 @@ PAGES
 - /partner/ is now a price-visible general B2B reseller page.
 - /partner/retatrutide/ is a new high-intent Retatrutide B2B landing page.
 
-PRICING
--------
-- Added all 11 retail price entries.
-- Added all 11 partner price entries.
-- Retatrutide retail: Rp2.500.000.
-- Retatrutide partner: Rp2.000.000.
-- All pricing is centralized in EQUABOLIX_CONFIG.products in script.js.
-- Removed legacy Rp1.100.000 / Rp1.250.000 references from the project.
+PRICING AND CATALOG
+-------------------
+- Active catalog updated to exactly 12 SKUs.
+- Retatrutide 10 mg and Retatrutide 30 mg lead the catalog.
+- Retail and Partner prices are centralized in EQUABOLIX_CONFIG.products.
+- Retail cards use Retail prices; partner cards show Partner Price and Retail Price.
+- Tesamorelin and Tirzepatide intentionally do not display a strength.
 
 SECTIONS REMOVED OR REDUCED
 ---------------------------
@@ -39,7 +46,7 @@ SECTIONS REMOVED OR REDUCED
 SECTIONS ADDED OR RESTRUCTURED
 ------------------------------
 - Retail hero with Retatrutide as hero product.
-- Featured products: Retatrutide, GHK-CU, Tirzepatide.
+- Featured products: Retatrutide 10 mg, Retatrutide 30 mg, and GHK-Cu 100 mg.
 - Full retail gallery with filters and official retail pricing.
 - Partner catalog with partner price and official retail anchor.
 - Partner economics, enablement, qualification, and reorder flow.
@@ -63,7 +70,4 @@ RESPONSIVE AND QA
 OWNER INPUT STILL REQUIRED
 --------------------------
 - Replace the placeholder WhatsApp number 6281234567890 in script.js.
-- Add the supplied official PNGs for Tirzepatide, Tesamorelin, BPC-157,
-  CJC-1295, KLOW Stack, GHK-CU, HGH, Semax, and Epitalon inside the project.
-  The sandbox could not read the Downloads copies, so branded vial fallbacks
-  are used instead of shipping broken image paths or fake product mockups.
+- Confirm current stock and commercial terms before launch.
